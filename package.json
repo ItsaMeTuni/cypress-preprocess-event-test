@@ -4,6 +4,7 @@
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
     "cypress:run": "cypress run",
+    "cypress:run-ct": "cypress run-ct",
     "cypress:open": "cypress open",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
@@ -13,11 +14,19 @@
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
     "set-status": "set-status"
   },
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "ok-file": "1.5.2"
+    "@cypress/react": "^5.12.5",
+    "@cypress/webpack-dev-server": "^1.8.4",
+    "cypress": "^9.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ok-file": "1.5.2",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.72.1",
+    "webpack-dev-server": "^4.9.1"
   },
   "repository": {
     "type": "git",
